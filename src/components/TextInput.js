@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 class TextInput extends Component {
   constructor() {
     super();
-  }
+  }  
 
   render() {
     return(
@@ -11,6 +11,7 @@ class TextInput extends Component {
           id="text-input"
           type="text"
           placeholder={this.props.placeholder}
+          onKeyPress={e => this.props.handleKeyPress(e)}
         />
     );
   }

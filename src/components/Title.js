@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import TextInput from './TextInput';
 
 class Title extends Component {
   constructor() {
@@ -8,9 +7,8 @@ class Title extends Component {
 
   render() {
     return(
-      <div className="header">
-        <div className="main-title">{this.props.title}</div>
-        <TextInput placeholder="Symbol" />
+      <div className="main-title">
+        {this.props.title.toUpperCase()}
       </div>
     );
   }

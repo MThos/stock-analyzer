@@ -12,25 +12,12 @@ body {
   background: white;
   border-left: 4px solid rgba(0, 0, 0, 0.1);
   border-right: 4px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
   font-family: 'Nanum Gothic Coding', Tahoma, sans-serif;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0 auto;
   width: 900px;
-}
-
-.header {
-  align-items: center;
-  background: black;
-  display: flex;
-  justify-content: space-between;
-}
-
-.main-title {
-  color: white;
-  font-size: 1.5rem;
-  font-weight: 600;
-  padding: 25px 0 25px 25px;
-  text-align: left;
 }
 
 #basic-details {
@@ -39,9 +26,9 @@ body {
   border-bottom: 8px solid rgba(0, 0, 0, 0.3);
   color: white;
   display: flex;
+  flex-direction: row;
   font-size: 1.2rem;
   justify-content: space-around;
-  margin: 0 auto;
   padding: 0 60px 0 30px;
 }
 
@@ -51,7 +38,7 @@ body {
 }
 
 #daily-chart {
-  margin: 50px 65px 25px auto;
+  margin: 150px 110px 25px auto;
 }
 
 .flex-column {
@@ -66,8 +53,54 @@ body {
   padding: 7px;
 }
 
+footer {
+  background: rgba(200, 200, 200, 0.1);;
+  border-top: 8px solid rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+  padding: 10px 0;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
+}
+
+footer a:hover {
+  font-weight: 600;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-left: 0;
+}
+
+footer ul li {
+  list-style-type: none;
+}
+
+header {
+  align-items: center;
+  background: black;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-title {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 25px 0 25px 25px;
+  text-align: left;
+}
+
+section {
+  flex: 1 0 auto;
+}
+
 #text-input {
-  border: 2px solid black;
+  border: 2px solid white;
   border-radius: 4px;
   height: 34px;
   font-size: 1.3rem;
@@ -76,4 +109,10 @@ body {
   text-transform: uppercase;
   text-align: center;
   width: 150px;
+}
+
+#text-input:focus {
+  background: rgb(255, 208, 0);
+  border: 2px solid gold;
+  color: black;
 }
