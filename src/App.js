@@ -1,16 +1,17 @@
 import { Component } from 'react';
 import './App.css';
-import Title from './components/Title';
-import TextInput from './components/TextInput';
+import Header from './components/Header';
 import BasicDetails from './components/BasicDetails';
-import DailyChart from './components/DailyChart';
+import NavBar from './components/NavBar';
+import Section from './components/Section';
 import Footer from './components/Footer';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      symbol: "Stock Analyzer"
+      active: "charts",
+      symbol: ""
     }
   }
 
@@ -22,20 +23,18 @@ class App extends Component {
     }
   }
 
+  onClick = (e) => {
+    this.setState({ active: e.target.id });
+  }
+
   render() {
     return (
       <div className="App">
-        <header>
-          <Title title={this.state.symbol} />
-          <TextInput placeholder="Symbol" handleKeyPress={this.handleKeyPress} />
-        </header>
+        <Header symbol={this.state.symbol} handleKeyPress={this.handleKeyPress} />
         <BasicDetails />
-        <section>
-          <DailyChart />
-        </section>
-        <footer>
-          <Footer />
-        </footer>
+        <NavBar active={this.state.active} onClick={this.onClick} />
+        <Section active={this.state.active} />
+        <Footer />
       </div>
     );
   }  

@@ -8,7 +8,7 @@ class BasicDetailsItem extends Component {
   render() {
     return(
       <li className="basic-details-item">
-        {this.props.keyword} : {this.props.value}
+        {this.props.keyword}
       </li>
     );
   }

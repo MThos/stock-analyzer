@@ -8,6 +8,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+  text-decoration: none;
+}
+
 .App {
   background: white;
   border-left: 4px solid rgba(0, 0, 0, 0.1);
@@ -22,14 +26,15 @@ body {
 
 #basic-details {
   background: #1abc8f;
-  border-top: 8px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 8px solid rgba(0, 0, 0, 0.3);
+  border-top: 6px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 6px solid rgba(0, 0, 0, 0.2);
   color: white;
   display: flex;
   flex-direction: row;
   font-size: 1.2rem;
-  justify-content: space-around;
-  padding: 0 60px 0 30px;
+  justify-content: space-between;
+  text-align: left;
+  padding: 0 120px;
 }
 
 .basic-details-item {
@@ -37,26 +42,119 @@ body {
   text-transform: capitalize;
 }
 
-#daily-chart {
-  margin: 150px 110px 25px auto;
+#chart-time {
+  font-size: 1.1rem;
+  padding: 60px 200px 0 200px;
 }
 
-.flex-column {
-  text-align: right;
+#chart-time a {
+  color: black;
+}
+
+#chart-time a:hover {
+  color: mediumslateblue;
+  font-weight: 600;
+}
+
+#chart-time a:active {
+  color: black;
+  font-weight: 600;
+}
+
+#chart-time ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 12px 0;
+  padding-left: 0;
+}
+
+.chart-time-active {
+  background: rgb(0, 0, 0, 0.7) !important;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  color: white !important;
+  font-weight: 600;
+  padding: 8px;
+}
+
+.chart-time-link {
+  margin: 8px;
+}
+
+#company-description {
+  font-size: 1.2rem;
+  padding: 0 60px;
+  text-align: left;
+}
+
+#company {
+  margin-top: 30px;
+}
+
+.company-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#company-middle {
+  background: rgba(0, 0, 0, 0.7);
+  border: 6px solid rgba(0, 0, 0, 0.3);
+  color: white;
+  font-weight: 600;
+  margin: 30px auto 30px auto;
+  padding: 10px 50px;
+  width: fit-content;
+}
+
+#company-middle div {
+  padding: 5px;
+}
+
+#company-name {
+  border-top: 4px solid rgba(0, 0, 0, 0.8);
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 10px 0 0 0;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+#company-sector {
+  margin-top: 10px;
+}
+
+#company-symbol {
+  color: black;
+  font-size: 2.5rem;
+  padding: 0 0 10px 0;
+}
+
+#daily-chart {
+  margin: 50px 110px 25px auto;
 }
 
 .flex-column ul {
   list-style-type: none;
+  margin: 7px;
+  padding-left: 0;
 }
 
 .flex-column li {
-  padding: 7px;
+  padding: 5px;
+}
+
+.flex-spacer {
+  padding: 0 25px;
 }
 
 footer {
-  background: rgba(200, 200, 200, 0.1);;
+  background: rgba(200, 200, 200, 0.1);
   border-top: 8px solid rgba(0, 0, 0, 0.1);
   flex-shrink: 0;
+  margin-top: 40px;
   padding: 10px 0;
 }
 
@@ -66,6 +164,7 @@ footer a {
 }
 
 footer a:hover {
+  color: mediumslateblue;
   font-weight: 600;
 }
 
@@ -73,11 +172,8 @@ footer ul {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding-left: 0;
-}
-
-footer ul li {
   list-style-type: none;
+  padding-left: 0;
 }
 
 header {
@@ -91,8 +187,49 @@ header {
   color: white;
   font-size: 1.5rem;
   font-weight: 600;
-  padding: 25px 0 25px 25px;
+  padding: 15px 0 15px 25px;
   text-align: left;
+}
+
+#navbar {
+  background: rgba(200, 200, 200, 0.2);
+  border-bottom: 8px solid rgba(0, 0, 0, 0.1);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+}
+
+#navbar a {
+  color: black;
+}
+
+#navbar a:hover {
+  color: mediumslateblue;
+}
+
+#navbar a:active {
+  color: black;
+}
+
+#navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 12px 0;
+  padding-left: 0;
+}
+
+.nav-active {
+  background: rgb(0, 0, 0, 0.7) !important;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  color: white !important;
+  padding: 8px;
+}
+
+.nav-link {
+  margin: 8px;
 }
 
 section {
@@ -102,8 +239,8 @@ section {
 #text-input {
   border: 2px solid white;
   border-radius: 4px;
-  height: 34px;
-  font-size: 1.3rem;
+  height: 26px;
+  font-size: 1.2rem;
   margin: 1px 20px 0 0;
   padding-bottom: 3px;
   text-transform: uppercase;

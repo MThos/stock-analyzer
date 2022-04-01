@@ -25,26 +25,56 @@ class BasicDetails extends Component {
       <div id="basic-details">
         <div className="flex-column">
           <ul>
-            <BasicDetailsItem keyword="Open" value={this.state.open} />
-            <BasicDetailsItem keyword="Close" value={this.state.close} />
-            <BasicDetailsItem keyword="High" value={this.state.high} />
-            <BasicDetailsItem keyword="Low" value={this.state.low} />
+            <BasicDetailsItem keyword="Open" />
+            <BasicDetailsItem keyword="Close" />
+            <BasicDetailsItem keyword="High" />
+            <BasicDetailsItem keyword="Low" />
           </ul>
         </div>
         <div className="flex-column">
           <ul>
-            <BasicDetailsItem keyword="Shares" value={this.state.shares} />
-            <BasicDetailsItem keyword="EPS" value={this.state.eps} />
-            <BasicDetailsItem keyword="Revenue" value={this.state.revenue} />
-            <BasicDetailsItem keyword="EBITDA" value={this.state.ebitda} />
+            <BasicDetailsItem keyword={this.state.open} />
+            <BasicDetailsItem keyword={this.state.close} />
+            <BasicDetailsItem keyword={this.state.high} />
+            <BasicDetailsItem keyword={this.state.low} />
+          </ul>
+        </div>
+        <div className="flex-spacer">
+
+        </div>
+        <div className="flex-column">
+          <ul>
+            <BasicDetailsItem keyword="Shares" />
+            <BasicDetailsItem keyword="EPS" />
+            <BasicDetailsItem keyword="Revenue" />
+            <BasicDetailsItem keyword="EBITDA" />
           </ul>
         </div>
         <div className="flex-column">
           <ul>
-            <BasicDetailsItem keyword="52W High" value={this.state.high52} />
-            <BasicDetailsItem keyword="52W Low" value={this.state.low52} />
-            <BasicDetailsItem keyword="Market Cap" value={this.state.mcap} />
-            <BasicDetailsItem keyword="Volume" value={this.state.volume} />
+            <BasicDetailsItem keyword={this.state.shares} />
+            <BasicDetailsItem keyword={this.state.eps} />
+            <BasicDetailsItem keyword={this.state.revenue} />
+            <BasicDetailsItem keyword={this.state.ebitda} />
+          </ul>
+        </div>
+        <div className="flex-spacer">
+          
+        </div>
+        <div className="flex-column">
+          <ul>
+            <BasicDetailsItem keyword="52W High" />
+            <BasicDetailsItem keyword="52W Low" />
+            <BasicDetailsItem keyword="Market Cap" />
+            <BasicDetailsItem keyword="Volume" />
+          </ul>
+        </div>
+        <div className="flex-column">
+          <ul>
+            <BasicDetailsItem keyword={this.state.high52} />
+            <BasicDetailsItem keyword={this.state.low52} />
+            <BasicDetailsItem keyword={this.state.mcap} />
+            <BasicDetailsItem keyword={this.state.volume} />
           </ul>
         </div>
       </div>

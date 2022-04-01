@@ -63,21 +63,21 @@ class DailyChart extends PureComponent {
     }
 
     return (
-      <ResponsiveContainer width={"80%"} height={300} id="daily-chart">
-        <BarChart
-          data={this.state.data}
-        >
-          <CartesianAxis />
-          <XAxis dataKey="date" />
-          <YAxis />
-          <Tooltip contentStyle={tooltipContentStyle} labelStyle={tooltipLabelStyle} />
-          <Legend wrapperStyle={legendWrapperStyle} />
-          <Bar type="linear" dataKey="open" stroke="black" fill="black" />
-          <Bar type="linear" dataKey="close" stroke="black" fill="black" />
-          <Bar type="linear" dataKey="high" stroke="black" fill="mediumseagreen" />
-          <Bar type="linear" dataKey="low" stroke="black" fill="red" />
-        </BarChart>
-      </ResponsiveContainer>
+      <section>
+        <ResponsiveContainer width={"80%"} height={300} id="daily-chart">
+          <BarChart data={this.state.data}>
+            <CartesianAxis />
+            <XAxis dataKey="date" />
+            <YAxis />
+            <Tooltip contentStyle={tooltipContentStyle} labelStyle={tooltipLabelStyle} />
+            <Legend wrapperStyle={legendWrapperStyle} />
+            <Bar type="linear" dataKey="open" stroke="black" fill="black" />
+            <Bar type="linear" dataKey="close" stroke="black" fill="black" />
+            <Bar type="linear" dataKey="high" stroke="black" fill="mediumseagreen" />
+            <Bar type="linear" dataKey="low" stroke="black" fill="red" />
+          </BarChart>
+        </ResponsiveContainer>
+      </section>      
     );
   }
 }
