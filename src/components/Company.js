@@ -12,7 +12,7 @@ class Company extends Component {
     return(
       <div id="company" className="company-flex">
         <div id="company-symbol">IBM</div>
-        <div id="company-name">International Business Machines Corporation</div>
+        <div id="company-name">·International Business Machines Corporation·</div>
         <div id="company-middle">
           <div id="company-exchange">NYSE</div>
           <div id="company-country">USA</div>

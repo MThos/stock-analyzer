@@ -34,7 +34,7 @@ class App extends Component {
         <BasicDetails />
         <NavBar active={this.state.active} onClick={this.onClick} />
         <Section active={this.state.active} />
-        <Footer />
+        <Footer active={this.state.active} onClick={this.onClick} />
       </div>
     );
   }  

@@ -8,7 +8,7 @@ class Title extends Component {
   render() {
     return(
       <div className="main-title">
-        {this.props.title.toUpperCase()}
+        {this.props.title}
       </div>
     );
   }

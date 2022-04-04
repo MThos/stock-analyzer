@@ -42,6 +42,10 @@ a {
   text-transform: capitalize;
 }
 
+.bold {
+  font-weight: 600;
+}
+
 #chart-time {
   font-size: 1.1rem;
   padding: 60px 200px 0 200px;
@@ -101,6 +105,7 @@ a {
 #company-middle {
   background: rgba(0, 0, 0, 0.7);
   border: 6px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
   color: white;
   font-weight: 600;
   margin: 30px auto 30px auto;
@@ -132,6 +137,53 @@ a {
   padding: 0 0 10px 0;
 }
 
+#contact {
+  margin-top: 20px;
+}
+
+#contact a {
+  color: mediumslateblue;
+}
+
+#contact a:hover {
+  font-weight: 600;
+}
+
+#contact-body {
+  font-size: 1.2rem;
+  padding: 50px 70px;
+  text-align: left;
+}
+
+#contact-email {
+  padding-bottom: 50px;
+}
+
+.contact-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#contact-header {
+  border-bottom: 4px solid rgba(0, 0, 0, 0.8);
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+#contact-header div {
+  padding-bottom: 10px;
+}
+
+.contact-sub-header {
+  border-bottom: 2px solid black;
+  font-size: 1.2rem;
+  font-weight: bold;
+  width: fit-content;
+}
+
 #daily-chart {
   margin: 50px 110px 25px auto;
 }
@@ -160,6 +212,7 @@ footer {
 
 footer a {
   color: black;
+  cursor: pointer;
   text-decoration: none;
 }
 
@@ -183,6 +236,57 @@ header {
   justify-content: space-between;
 }
 
+.legal {
+  padding: 10px 70px;
+  text-align: left;
+}
+
+.legal a {
+  color: mediumslateblue;
+}
+
+.legal a:hover {
+  font-weight: 600;
+}
+
+.legal-body {
+  font-size: 1.1rem;
+  padding-bottom: 10px;
+}
+
+.legal-body-header {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.legal-date {
+  font-size: 0.9rem;
+  padding: 10px 0 30px 0;
+}
+
+.legal-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+
+.legal-header {
+  border-bottom: 4px solid rgba(0, 0, 0, 0.8);
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.legal-sub-header {
+  border-bottom: 2px solid black;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  width: fit-content;
+}
+
 .main-title {
   color: white;
   font-size: 1.5rem;
@@ -202,6 +306,7 @@ header {
 
 #navbar a {
   color: black;
+  cursor: pointer;
 }
 
 #navbar a:hover {
@@ -224,7 +329,9 @@ header {
 .nav-active {
   background: rgb(0, 0, 0, 0.7) !important;
   border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
   color: white !important;
+  font-weight: 600;
   padding: 8px;
 }
 
@@ -252,4 +359,8 @@ section {
   background: rgb(255, 208, 0);
   border: 2px solid gold;
   color: black;
+}
+
+.underline {
+  text-decoration: underline;
 }

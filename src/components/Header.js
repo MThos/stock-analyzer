@@ -8,7 +8,7 @@ class Header extends Component {
   }
 
   render() {
-    let symbol = (this.props.symbol.length === 0) ? "Stock Analyzer" : this.props.symbol;
+    let symbol = (this.props.symbol.length === 0) ? "STOCKS·PROFILER" : this.props.symbol;
 
     return(
       <header>

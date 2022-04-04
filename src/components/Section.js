@@ -5,6 +5,10 @@ import Company from './Company';
 import Details from './Details';
 import Financials from './Financials';
 import Analysis from './Analysis';
+import Terms from './Terms';
+import Privacy from './Privacy';
+import Cookies from './Cookies';
+import Contact from './Contact';
 
 class Section extends Component {
   constructor() {
@@ -43,6 +47,30 @@ class Section extends Component {
       return(
         <section>
           <Company />
+        </section>
+      )
+    } else if (active === "terms") {
+      return(
+        <section>
+          <Terms />
+        </section>
+      )
+    } else if (active === "privacy") {
+      return(
+        <section>
+          <Privacy />
+        </section>
+      )
+    } else if (active === "cookies") {
+      return(
+        <section>
+          <Cookies />
+        </section>
+      )
+    } else if (active === "contact") {
+      return(
+        <section>
+          <Contact />
         </section>
       )
     }
