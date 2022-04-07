@@ -14,7 +14,7 @@ class Section extends Component {
   constructor() {
     super();
   }
-
+  
   render() {
     let active = this.props.active;
 

@@ -226,7 +226,7 @@ class Terms extends Component {
         <div className="legal">
           <div className="legal-sub-header">CONTACT INFORMATION</div>
             <div class="legal-body">
-                Questions about the Terms of Service should be sent to us at:  <a href="mailto:admin@stocksprofiler.com">admin@stocksprofiler.com</a>
+                Questions about the Terms of Service can be sent to us:  <a href="mailto:admin@stocksprofiler.com">admin@stocksprofiler.com</a>
             </div>
         </div>
       </div>

@@ -23,7 +23,7 @@ class BasicDetails extends Component {
   render() {
     return(
       <div id="basic-details">
-        <div className="flex-column">
+        <div className="basic-flex-column">
           <ul>
             <BasicDetailsItem keyword="Open" />
             <BasicDetailsItem keyword="Close" />
@@ -31,7 +31,7 @@ class BasicDetails extends Component {
             <BasicDetailsItem keyword="Low" />
           </ul>
         </div>
-        <div className="flex-column">
+        <div className="basic-flex-column">
           <ul>
             <BasicDetailsItem keyword={this.state.open} />
             <BasicDetailsItem keyword={this.state.close} />
@@ -39,10 +39,7 @@ class BasicDetails extends Component {
             <BasicDetailsItem keyword={this.state.low} />
           </ul>
         </div>
-        <div className="flex-spacer">
-
-        </div>
-        <div className="flex-column">
+        <div className="basic-flex-column">
           <ul>
             <BasicDetailsItem keyword="Shares" />
             <BasicDetailsItem keyword="EPS" />
@@ -50,7 +47,7 @@ class BasicDetails extends Component {
             <BasicDetailsItem keyword="EBITDA" />
           </ul>
         </div>
-        <div className="flex-column">
+        <div className="basic-flex-column">
           <ul>
             <BasicDetailsItem keyword={this.state.shares} />
             <BasicDetailsItem keyword={this.state.eps} />
@@ -58,10 +55,7 @@ class BasicDetails extends Component {
             <BasicDetailsItem keyword={this.state.ebitda} />
           </ul>
         </div>
-        <div className="flex-spacer">
-          
-        </div>
-        <div className="flex-column">
+        <div className="basic-flex-column">
           <ul>
             <BasicDetailsItem keyword="52W High" />
             <BasicDetailsItem keyword="52W Low" />
@@ -69,7 +63,7 @@ class BasicDetails extends Component {
             <BasicDetailsItem keyword="Volume" />
           </ul>
         </div>
-        <div className="flex-column">
+        <div className="basic-flex-column">
           <ul>
             <BasicDetailsItem keyword={this.state.high52} />
             <BasicDetailsItem keyword={this.state.low52} />
